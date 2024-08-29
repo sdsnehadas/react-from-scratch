@@ -4,10 +4,10 @@
   "description": "this is react from scratch repo",
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html",
+    "build": "parcel build index.html --public-url /react-from-scratch/",
     "test": "jest",
     "predeploy": "npm run build",
-     "deploy": "gh-pages -d build"
+     "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
