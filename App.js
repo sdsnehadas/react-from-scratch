@@ -1,22 +1,45 @@
-const heading= React.createElement("h1",{id:"heading"}, "Hello world from React");
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
+import DesignedBar from "./src/components/DesignedBar";
+import Footer from "./src/components/Footer";
+import BodyContainer from "./src/components/BodyContainer";
+import AboutUs from "./src/components/AboutUs";
+import ContactUs from "./src/components/ContactUs";
+import Error from "./src/components/Error";
+import Restaurentmenu from "./src/components/Restaurentmenu";
+import Header from "./src/components/Header"
+import { Provider } from "react-redux";
+import appStore from "./src/utils/appStore";
+import CartPage from "./src/components/CartPage";
+
+const AppComponent = () => {
+  return (
+    <Provider store={appStore}>
+       <div>
+      <Header/>
+      <DesignedBar />
+      <Outlet />
+      <Footer />
+    </div>
+    </Provider>
+   
+  );
+};
+
+const AppRouter = createBrowserRouter([
+  {
+    path: "/",
+    element: <AppComponent />,
+    children: [
+      { path: "/", element: <BodyContainer /> },
+      { path: "/aboutUs", element: <AboutUs></AboutUs> },
+      { path: "/contactUs", element: <ContactUs></ContactUs> },
+      { path: "/cart", element: <CartPage></CartPage> },
+      {path:"/restaurents/:resId", element:<Restaurentmenu></Restaurentmenu>}
+    ],
+    errorElement: <Error />,
+  }
+]);
 const root = ReactDOM.createRoot(document.getElementById("root"));
-
-
-/*
-<div id="parent">
-    <div id="child1">
-        <h1 id="h1">Hi its h1 from the first child of parent</h1>
-        <h2 id="h2">Hi its  h2 from the first child of parent</h1>
-    </div>
-    <div id="child2">
-         <h1 id="h1">Hi its h1 from the first child of parent</h1>
-        <h2 id="h2">Hi its  h2 from the first child of parent</h1>
-    </div>
-</div>
-*/
-
-const childdiv1 =  React.createElement("div",{id:"child1"}, [React.createElement("h1", {id:"h1"}, "Hi its h1 from the first child of parent"), React.createElement("h2", {id:"h2"}, "Hi its h2 from the first child of parent")]);
-const childdiv2 =  React.createElement("div",{id:"child2"}, [React.createElement("h1", {id:"h1"}, "Hi its h1 from the second child of parent"), React.createElement("h2", {id:"h2"}, "Hi its h2 from the second child of parent")])
-
-const parent = React.createElement("div",{id:"parent"}, [childdiv1, childdiv2])
-root.render(parent);
+root.render(<RouterProvider router={AppRouter} />);

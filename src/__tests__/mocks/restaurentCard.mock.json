@@ -1,0 +1,78 @@
+{
+    "info": {
+        "id": "502957",
+        "name": "Andhra Gunpowder",
+        "cloudinaryImageId": "bs9qgsy25pn07pzn6xx1",
+        "locality": "Shivananda Circle",
+        "areaName": "Seshadripuram",
+        "costForTwo": "₹350 for two",
+        "cuisines": [
+            "Andhra",
+            "Biryani",
+            "South Indian"
+        ],
+        "avgRating": 4.5,
+        "parentId": "10496",
+        "avgRatingString": "4.5",
+        "totalRatingsString": "1K+",
+        "sla": {
+            "deliveryTime": 29,
+            "lastMileTravel": 3.9,
+            "serviceability": "SERVICEABLE",
+            "slaString": "25-30 mins",
+            "lastMileTravelString": "3.9 km",
+            "iconType": "ICON_TYPE_EMPTY"
+        },
+        "availability": {
+            "nextCloseTime": "2024-08-28 00:00:00",
+            "opened": true
+        },
+        "badges": {
+            "imageBadges": [
+                {
+                    "imageId": "Rxawards/_CATEGORY-Andhra.png",
+                    "description": "Delivery!"
+                }
+            ]
+        },
+        "isOpen": true,
+        "type": "F",
+        "badgesV2": {
+            "entityBadges": {
+                "imageBased": {
+                    "badgeObject": [
+                        {
+                            "attributes": {
+                                "description": "Delivery!",
+                                "imageId": "Rxawards/_CATEGORY-Andhra.png"
+                            }
+                        }
+                    ]
+                },
+                "textBased": {},
+                "textExtendedBadges": {}
+            }
+        },
+        "aggregatedDiscountInfoV3": {
+            "header": "20% OFF",
+            "subHeader": "UPTO ₹50"
+        },
+        "differentiatedUi": {
+            "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+            "differentiatedUiMediaDetails": {
+                "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                "lottie": {},
+                "video": {}
+            }
+        },
+        "reviewsSummary": {},
+        "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+        "restaurantOfferPresentationInfo": {},
+        "externalRatings": {
+            "aggregatedRating": {
+                "rating": "--"
+            }
+        },
+        "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+    }
+}

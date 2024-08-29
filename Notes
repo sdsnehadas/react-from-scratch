@@ -1,0 +1,43 @@
+two types of dependecies in package.json
+
+Dev and Normal
+DEv : for development only
+ Normal used in production also
+
+ Transitive dependencies btw the other packages
+
+**#parcel** 
+-Dev build
+-local server
+-HMR : Hot module -replacement in parcel
+-file watching algorithms
+-caching -faster builds
+-image optimizations
+-minifications, bundling, compressing
+-consistent hashing 
+-code splitting
+-differential bundling for older browsers
+-host on https
+-tree shaking
+
+
+Browserslist : for country specific , region specific
+
+JSX :
+
+attributes in jsx are camelcase
+multiple lines in round brackets () for babel to understand  * https://legacy.reactjs.org/docs/dom-elements.html* 
+
+CONFIG DRIVEN UI 
+-controlling the UI based on some data config
+
+REACT HOOKS ( Norma js functions)
+
+useState()   : super powerful react variables
+useEffect()  : As soon as the render cycle finishes useEffect callback funcion will be called 
+
+useEffact(()=>{cb function },[dependency array])
+
+RECONCILIATION ALGORITHM , REACT FIBER
+
+REACT is faster bcoz it does efficient DOM manipulation using Virtual DOM , DIff Algorithm 

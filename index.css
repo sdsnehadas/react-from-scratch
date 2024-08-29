@@ -1,3 +1,91 @@
-#heading {
-    color: red;
+/* #heading {
+    background-color: red;
 }
+
+.logo-image{
+    width: 7%;
+    height:auto;
+}
+
+.header-items{
+    float: right;
+}
+
+.main-header{
+    justify-content: left;
+}
+
+.footer{
+        position: absolute; 
+        bottom: 0; 
+        left: 0; 
+        z-index: 10;
+}
+
+.restaurent-card{
+  border: 10px;
+    margin:20px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items:flex-start
+}
+.restaurent-card :hover{
+    background-color: cornsilk;
+}
+
+.body-container{
+    display: flex;
+  flex-wrap: wrap;
+  height: 300px;
+  align-content: space-between;}
+
+  .filter-with-icons{
+    display:flex;
+    flex-wrap:nowrap;
+    align-items: flex-start;
+  }
+
+  .shimmer-container{
+    display: flex;
+  }
+
+  .shimmer-card{
+    border: 10px;
+    margin:20px;
+    padding: 10px;
+    height:250px;
+    width:200px;
+    background-color: rgb(211, 230, 230);
+  }
+  .container{
+    fontFamily: 'Arial, sans-serif';
+    padding: '20px';
+    lineHeight: '1.6';
+  }
+  .header {
+    backgroundColor: '#f4f4f4';
+    padding: '10px 20px';
+    borderRadius: '5px';
+    marginBottom: '20px';
+  }
+  .section {
+    marginBottom: '20px';
+  }
+  .resaurent-image{
+    border: 10px;
+    margin:20px;
+    padding: 10px;
+    height:250px;
+    width:200px;
+  }
+  .menu-card{
+    display:block;
+    flex-wrap:wrap-reverse;
+    height: 300px;
+    align-content: space-between;
+    border: 10px;
+    margin:20px;
+    padding: 10px;
+
+  } */
